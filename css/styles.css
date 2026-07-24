@@ -407,6 +407,15 @@ html[data-theme="dark"] .theme-toggle__moon { display: block; }
 .teaching__card p { color: var(--ink-soft); font-size: .95rem; margin: 0 0 1rem; }
 .teaching__card a { font-family: var(--mono); font-size: .8rem; }
 
+/* ---------- INSTITUTIONS ---------- */
+.orgs { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: .7rem; }
+.orgs li {
+  font-family: var(--mono); font-size: .82rem; color: var(--ink);
+  padding: .55rem 1.05rem; border-radius: 100px; border: 1px solid var(--line);
+  background: var(--surface); transition: border-color .2s ease, transform .2s ease;
+}
+.orgs li:hover { border-color: var(--accent); transform: translateY(-2px); }
+
 /* ---------- CONTACT ---------- */
 .section--contact { text-align: center; }
 .contact__title { font-size: clamp(2rem, 5vw, 3.4rem); margin: 0 0 .6rem; }
@@ -443,8 +452,8 @@ html[data-theme="dark"] .theme-toggle__moon { display: block; }
   .talks { grid-template-columns: 1fr; }
   .teaching__card { position: static; }
 }
-/* nav collapses to a hamburger before the 9 links crowd the row */
-@media (max-width: 900px) {
+/* nav collapses to a hamburger before the links crowd the row */
+@media (max-width: 1000px) {
   .nav__burger { display: grid; margin-left: auto; }
   .nav__links {
     display: none; position: absolute; top: 100%; left: 0; right: 0;

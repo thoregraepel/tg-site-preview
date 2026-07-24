@@ -431,7 +431,7 @@
       venue: "Nature", year: 2020,
       cite: "Schrittwieser, Antonoglou, Hubert, … Graepel, Lillicrap, Silver · Nature 588, 604–609",
       cover: "vc:muzero",
-      url: "https://www.nature.com/articles/s41586-020-03051-3",
+      url: "https://arxiv.org/abs/1911.08265",
       abstract: "MuZero drops the last assumption AlphaZero still made: the rules. It learns its own model of an environment — just the parts that matter for value, policy and reward — and plans with that learned model. The same algorithm masters Go, chess and shogi and, without any simulator, the visually rich world of Atari: reasoning by planning, even when no one hands you the rules."
     }
   ];
@@ -458,8 +458,8 @@
       venue: "Nature", year: 2021,
       cite: "Dafoe, Bachrach, Hadfield, Horvitz, Larson, Graepel · Nature 593, 33–36",
       cover: "vc:cooperate",
-      url: "https://doi.org/10.1038/d41586-021-01170-0",
-      abstract: "A call to build AI that can cooperate — with humans and with other machines. We argue that the field has over-focused on raw capability and competition, and that learning to find common ground, build trust, and coordinate is essential if AI is to help solve society's hardest collective problems."
+      url: "https://discovery.ucl.ac.uk/id/eprint/10132183/1/Cooperative%20AI%20-%20machines%20must%20learn%20to%20find%20common%20ground%20-%20Preprint.pdf",
+      abstract: "A call to build AI that can cooperate — with humans and with other machines. We argue that the field has over-focused on raw capability and competition, and that learning to find common ground, build trust, and coordinate is essential if AI is to help solve society's hardest collective problems. This work helped catalyse the founding of the Cooperative AI Foundation, on whose board I now serve."
     },
     {
       title: "Open Problems in Cooperative AI",
@@ -467,7 +467,7 @@
       cite: "Dafoe, Hughes, Bachrach, Collins, McKee, Leibo, Larson, Graepel · arXiv:2012.08630",
       cover: "vc:cooperate",
       url: "https://arxiv.org/abs/2012.08630",
-      abstract: "The longer technical report behind the Nature comment. It lays out a research agenda for Cooperative AI across four capabilities — understanding, communication, commitment, and institutions — and the norms and infrastructure needed to study cooperation among AIs, humans, and mixed groups."
+      abstract: "The longer technical report behind the Nature comment. It lays out a research agenda for Cooperative AI across four capabilities — understanding, communication, commitment, and institutions — and the norms and infrastructure needed to study cooperation among AIs, humans, and mixed groups. Together with the Nature comment, it laid the groundwork for the Cooperative AI Foundation, where I serve on the board."
     },
     {
       title: "Private traits and attributes are predictable from digital records of human behavior",
@@ -614,7 +614,7 @@
           '<p class="pub__cite">' + escapeHTML(p.cite) + '</p>' +
           '<p class="pub__abstract">' + escapeHTML(p.abstract) + '</p>' +
           '<div class="pub__actions">' +
-            '<button class="pub__toggle" type="button" aria-expanded="false">read abstract</button>' +
+            '<button class="pub__toggle" type="button" aria-expanded="false">read description</button>' +
             '<a href="' + p.url + '" target="_blank" rel="noopener">paper ↗</a>' +
           '</div>' +
         '</div>';
@@ -623,7 +623,7 @@
       var title = card.querySelector(".pub__title");
       function flip() {
         var open = card.classList.toggle("is-open");
-        tog.textContent = open ? "hide abstract" : "read abstract";
+        tog.textContent = open ? "hide description" : "read description";
         tog.setAttribute("aria-expanded", open ? "true" : "false");
       }
       tog.addEventListener("click", flip);
@@ -637,6 +637,15 @@
   renderPubs(REASONING, "pubs-reasoning");
   renderPubs(ALPHAGO, "pubs-alphago");
   renderPubs(OTHER, "pubs-other");
+
+  /* ---------- Open every off-page link in a new tab ---------- */
+  Array.prototype.forEach.call(document.querySelectorAll("a[href]"), function (a) {
+    var href = a.getAttribute("href") || "";
+    if (href && href.charAt(0) !== "#") {
+      a.setAttribute("target", "_blank");
+      a.setAttribute("rel", "noopener noreferrer");
+    }
+  });
 
   function escapeHTML(s) {
     return String(s).replace(/[&<>"]/g, function (ch) {
