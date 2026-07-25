@@ -432,7 +432,7 @@
       title: "Mastering Atari, Go, chess and shogi by planning with a learned model",
       venue: "Nature", year: 2020,
       cite: "Schrittwieser, Antonoglou, Hubert, … Graepel, Lillicrap, Silver · Nature 588, 604–609",
-      cover: "vc:muzero",
+      cover: "img:images/paper_illustrations/mu-zero.png",
       url: "https://www.nature.com/articles/s41586-020-03051-3",
       preprint: "https://arxiv.org/pdf/1911.08265",
       abstract: "MuZero drops the last assumption AlphaZero still made: the rules. It learns its own model of an environment — just the parts that matter for value, policy and reward — and plans with that learned model. The same algorithm masters Go, chess and shogi and, without any simulator, the visually rich world of Atari: reasoning by planning, even when no one hands you the rules."
