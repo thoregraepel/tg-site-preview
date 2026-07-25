@@ -284,7 +284,7 @@ html[data-theme="dark"] .theme-toggle__moon { display: block; }
 .pub__cite { font-size: .82rem; color: var(--ink-faint); margin: 0 0 .8rem; }
 .pub__abstract { font-size: .9rem; color: var(--ink-soft); line-height: 1.55; max-height: 0; overflow: hidden; transition: max-height .4s ease, margin .4s ease; }
 .pub.is-open .pub__abstract { max-height: 460px; margin-bottom: .9rem; }
-.pub__actions { margin-top: auto; display: flex; gap: 1rem; align-items: center; padding-top: .4rem; }
+.pub__actions { margin-top: auto; display: flex; flex-wrap: wrap; gap: .5rem 1rem; align-items: center; padding-top: .4rem; }
 .pub__actions a, .pub__toggle {
   font-family: var(--mono); font-size: .76rem; letter-spacing: .02em;
   background: none; border: none; padding: 0; cursor: pointer; color: var(--accent);

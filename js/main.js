@@ -416,6 +416,7 @@
       cite: "Silver, Schrittwieser, Simonyan, … Graepel, Hassabis · Nature 550, 354–359",
       cover: "go",
       url: "https://www.nature.com/articles/nature24270",
+      preprint: "https://discovery.ucl.ac.uk/id/eprint/10045895/1/agz_unformatted_nature.pdf",
       abstract: "AlphaGo Zero learns tabula rasa — solely by reinforcement learning from self-play, with no human data or guidance beyond the rules. Becoming its own teacher, it reached superhuman play, winning 100–0 against the previously published, champion-defeating AlphaGo."
     },
     {
@@ -424,6 +425,7 @@
       cite: "Silver, Hubert, Schrittwieser, … Graepel, Lillicrap, Simonyan, Hassabis · Science 362 (6419)",
       cover: "go",
       url: "https://www.science.org/doi/10.1126/science.aar6404",
+      preprint: "https://discovery.ucl.ac.uk/id/eprint/10069050/1/alphazero_preprint.pdf",
       abstract: "AlphaZero generalises the AlphaGo Zero approach into a single algorithm that achieves superhuman performance across many games. Starting from random play and given no domain knowledge except the rules, it convincingly defeated world-champion programs in chess and shogi as well as Go — one method, three games, no human data."
     },
     {
@@ -431,7 +433,8 @@
       venue: "Nature", year: 2020,
       cite: "Schrittwieser, Antonoglou, Hubert, … Graepel, Lillicrap, Silver · Nature 588, 604–609",
       cover: "vc:muzero",
-      url: "https://arxiv.org/abs/1911.08265",
+      url: "https://www.nature.com/articles/s41586-020-03051-3",
+      preprint: "https://arxiv.org/pdf/1911.08265",
       abstract: "MuZero drops the last assumption AlphaZero still made: the rules. It learns its own model of an environment — just the parts that matter for value, policy and reward — and plans with that learned model. The same algorithm masters Go, chess and shogi and, without any simulator, the visually rich world of Atari: reasoning by planning, even when no one hands you the rules."
     }
   ];
@@ -616,6 +619,7 @@
           '<div class="pub__actions">' +
             '<button class="pub__toggle" type="button" aria-expanded="false">read description</button>' +
             '<a href="' + p.url + '" target="_blank" rel="noopener">paper ↗</a>' +
+            (p.preprint ? '<a href="' + p.preprint + '" target="_blank" rel="noopener">preprint ↗</a>' : '') +
           '</div>' +
         '</div>';
 
