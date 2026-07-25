@@ -372,14 +372,17 @@ html[data-theme="dark"] .theme-toggle__moon { display: block; }
 
 /* ---------- WRITING (Substack) ---------- */
 .writing {
-  display: block; max-width: 720px; color: var(--ink);
+  display: grid; grid-template-columns: minmax(140px, 190px) 1fr; gap: clamp(1.3rem, 3vw, 2.2rem);
+  align-items: center; max-width: 780px; color: var(--ink);
   background: var(--surface); border: 1px solid var(--line-soft); border-left: 3px solid #e0533a;
-  border-radius: var(--radius); padding: clamp(1.6rem, 4vw, 2.4rem);
+  border-radius: var(--radius); padding: clamp(1.6rem, 4vw, 2.2rem);
   transition: transform .25s ease, box-shadow .25s ease;
 }
 .writing:hover { transform: translateY(-4px); box-shadow: 0 22px 44px -24px var(--shadow); text-decoration: none; }
+.writing__logo { border-radius: 10px; overflow: hidden; background: #fff; box-shadow: 0 2px 12px var(--shadow); }
+.writing__logo img { width: 100%; height: auto; display: block; }
 .writing h3 { font-size: clamp(1.5rem, 3.2vw, 2.1rem); margin: .5rem 0 .7rem; }
-.writing p { color: var(--ink-soft); margin: 0 0 1rem; max-width: 60ch; }
+.writing p { color: var(--ink-soft); margin: 0 0 1rem; max-width: 56ch; }
 
 /* ---------- NEW VENTURE CALLOUT ---------- */
 .venture {
@@ -461,6 +464,8 @@ html[data-theme="dark"] .theme-toggle__moon { display: block; }
   .vfeature, .vfeature--reverse .vfeature__frame { grid-template-columns: 1fr; order: 0; }
   .vfeature__frame { order: -1 !important; }
   .experiments { grid-template-columns: 1fr; }
+  .writing { grid-template-columns: 1fr; }
+  .writing__logo { max-width: 240px; }
   .talks { grid-template-columns: 1fr; }
   .teaching__card { position: static; }
 }
