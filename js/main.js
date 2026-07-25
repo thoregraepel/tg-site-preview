@@ -651,6 +651,13 @@
     }
   });
 
+  /* ---------- Hide any institution logo that fails to load ---------- */
+  Array.prototype.forEach.call(document.querySelectorAll(".org__ico"), function (img) {
+    function hide() { img.style.display = "none"; }
+    img.addEventListener("error", hide);
+    if (img.complete && img.naturalWidth === 0) hide();
+  });
+
   function escapeHTML(s) {
     return String(s).replace(/[&<>"]/g, function (ch) {
       return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[ch];
