@@ -361,8 +361,9 @@ html[data-theme="dark"] .theme-toggle__moon { display: block; }
   transition: transform .25s ease, box-shadow .25s ease, border-color .25s;
 }
 .exp:hover { transform: translateY(-5px); box-shadow: 0 22px 44px -24px var(--shadow); border-color: var(--line); text-decoration: none; }
-.exp__art { aspect-ratio: 16 / 8; display: grid; place-items: center; background: var(--board-2); border-bottom: 1px solid var(--line-soft); color: var(--accent); }
-.exp__art svg { width: 52%; height: 52%; }
+.exp__art { aspect-ratio: 16 / 8; position: relative; overflow: hidden; background: var(--board-2); border-bottom: 1px solid var(--line-soft); }
+.exp__img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .6s ease; }
+.exp:hover .exp__img { transform: scale(1.04); }
 .exp__body { padding: 1.15rem 1.25rem 1.3rem; display: flex; flex-direction: column; flex: 1; }
 .exp__body h3 { font-size: 1.16rem; margin: 0 0 .5rem; }
 .exp__body p { font-size: .9rem; color: var(--ink-soft); margin: 0 0 1rem; line-height: 1.55; flex: 1; }

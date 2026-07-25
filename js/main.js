@@ -371,7 +371,7 @@
       title: "Web-Scale Bayesian Click-Through Rate Prediction (AdPredictor)",
       venue: "ICML", year: 2010,
       cite: "Graepel, Quiñonero-Candela, Borchert, Herbrich · ICML 2010 · Microsoft Bing",
-      cover: "vc:gauss",
+      cover: "img:images/paper_illustrations/adpredictor.png",
       url: "https://quinonero.net/Publications/AdPredictorICML2010-final.pdf",
       abstract: "AdPredictor — a probit regression model with Gaussian beliefs over weights, updated online by approximate message passing — powers click-through prediction for sponsored search in Microsoft's Bing. Principled weight pruning and an approximate parallel implementation make Bayesian inference scale to the web."
     },
@@ -379,7 +379,7 @@
       title: "Matchbox: Large Scale Online Bayesian Recommendations",
       venue: "WWW", year: 2009,
       cite: "Stern, Herbrich, Graepel · Proceedings of the 18th International World Wide Web Conference",
-      cover: "vc:matchbox",
+      cover: "img:images/paper_illustrations/matchbox.png",
       url: "https://www.herbrich.me/papers/www09.pdf",
       abstract: "A probabilistic recommender that fuses content (user and item metadata) with collaborative filtering by mapping features into a shared low-dimensional trait space. It learns online via assumed-density filtering, expressing calibrated uncertainty over every recommendation."
     },
@@ -387,7 +387,7 @@
       title: "Bayesian Pattern Ranking for Move Prediction in the Game of Go",
       venue: "ICML", year: 2006,
       cite: "Stern, Herbrich, Graepel · ICML 2006",
-      cover: "vc:goranking",
+      cover: "img:images/paper_illustrations/go-pattern-ranking.png",
       url: "https://www.herbrich.me/papers/p873-stern.pdf",
       abstract: "A Bayesian ranking model over local board patterns that learns a distribution over an expert's next move from game records — predicting the played move in roughly a third of positions. A conceptual ancestor of the policy network that would later guide AlphaGo's search: probabilistic reasoning meeting the game of Go, a decade early."
     },
@@ -414,7 +414,7 @@
       title: "Mastering the game of Go without human knowledge",
       venue: "Nature", year: 2017,
       cite: "Silver, Schrittwieser, Simonyan, … Graepel, Hassabis · Nature 550, 354–359",
-      cover: "go",
+      cover: "img:images/paper_illustrations/alphago-zero.png",
       url: "https://www.nature.com/articles/nature24270",
       preprint: "https://discovery.ucl.ac.uk/id/eprint/10045895/1/agz_unformatted_nature.pdf",
       abstract: "AlphaGo Zero learns tabula rasa — solely by reinforcement learning from self-play, with no human data or guidance beyond the rules. Becoming its own teacher, it reached superhuman play, winning 100–0 against the previously published, champion-defeating AlphaGo."
@@ -423,7 +423,7 @@
       title: "A general reinforcement learning algorithm that masters chess, shogi, and Go through self-play",
       venue: "Science", year: 2018,
       cite: "Silver, Hubert, Schrittwieser, … Graepel, Lillicrap, Simonyan, Hassabis · Science 362 (6419)",
-      cover: "go",
+      cover: "img:images/paper_illustrations/alphazero.png",
       url: "https://www.science.org/doi/10.1126/science.aar6404",
       preprint: "https://discovery.ucl.ac.uk/id/eprint/10069050/1/alphazero_preprint.pdf",
       abstract: "AlphaZero generalises the AlphaGo Zero approach into a single algorithm that achieves superhuman performance across many games. Starting from random play and given no domain knowledge except the rules, it convincingly defeated world-champion programs in chess and shogi as well as Go — one method, three games, no human data."
@@ -444,7 +444,7 @@
       title: "From AGI to ASI: the future of artificial intelligence",
       venue: "arXiv", year: 2026,
       cite: "Genewein, Franklin, Lerchner, … Graepel, Hutter, Legg · arXiv:2606.12683 · Google DeepMind",
-      cover: "vc:ascend",
+      cover: "img:images/paper_illustrations/agi-to-asi.png",
       url: "https://arxiv.org/abs/2606.12683",
       abstract: "A technical report examining the transition from artificial general intelligence to artificial superintelligence — what changes as machine intelligence surpasses the human range, the advantages of digital over biological intelligence, and what these shifts mean for how we design and govern advanced AI. From my time on the Post-AGI team at Google DeepMind."
     },
@@ -452,7 +452,7 @@
       title: "Escaping ageing through Cell Annealing — a phenomenological model",
       venue: "Cell Research", year: 2025,
       cite: "Memczak, Izpisúa Belmonte, Graepel · Cell Research 35 (8), 535–538",
-      cover: "img:images/cell-annealing-cover.jpg",
+      cover: "img:images/paper_illustrations/cell-annealing.jpg",
       url: "https://www.nature.com/articles/s41422-025-01138-z",
       abstract: "A physics-inspired model of cellular rejuvenation, from my time at Altos Labs. Borrowing from Hopfield networks and energy landscapes, we picture cell states as minima in a landscape: transiently raising cellular potency (\"annealing\") lets ageing cells escape dysfunctional local minima and settle back into youthful, healthy states — a conceptual bridge between machine learning and cellular reprogramming. Joint work with Sebastian Memczak."
     },
@@ -460,7 +460,7 @@
       title: "Cooperative AI: machines must learn to find common ground",
       venue: "Nature", year: 2021,
       cite: "Dafoe, Bachrach, Hadfield, Horvitz, Larson, Graepel · Nature 593, 33–36",
-      cover: "vc:cooperate",
+      cover: "img:images/paper_illustrations/common-ground.jpg",
       url: "https://discovery.ucl.ac.uk/id/eprint/10132183/1/Cooperative%20AI%20-%20machines%20must%20learn%20to%20find%20common%20ground%20-%20Preprint.pdf",
       abstract: "A call to build AI that can cooperate — with humans and with other machines. We argue that the field has over-focused on raw capability and competition, and that learning to find common ground, build trust, and coordinate is essential if AI is to help solve society's hardest collective problems. This work helped catalyse the founding of the Cooperative AI Foundation, on whose board I now serve."
     },
@@ -468,7 +468,7 @@
       title: "Open Problems in Cooperative AI",
       venue: "arXiv", year: 2020,
       cite: "Dafoe, Hughes, Bachrach, Collins, McKee, Leibo, Larson, Graepel · arXiv:2012.08630",
-      cover: "vc:cooperate",
+      cover: "img:images/paper_illustrations/open-problems-coop-ai.png",
       url: "https://arxiv.org/abs/2012.08630",
       abstract: "The longer technical report behind the Nature comment. It lays out a research agenda for Cooperative AI across four capabilities — understanding, communication, commitment, and institutions — and the norms and infrastructure needed to study cooperation among AIs, humans, and mixed groups. Together with the Nature comment, it laid the groundwork for the Cooperative AI Foundation, where I serve on the board."
     },
@@ -476,7 +476,7 @@
       title: "Private traits and attributes are predictable from digital records of human behavior",
       venue: "PNAS", year: 2013,
       cite: "Kosinski, Stillwell, Graepel · PNAS 110 (15), 5802–5805",
-      cover: "vc:privacy",
+      cover: "img:images/paper_illustrations/private-traits.jpg",
       url: "https://www.pnas.org/doi/10.1073/pnas.1218772110",
       abstract: "Facebook Likes alone can accurately predict highly sensitive attributes — sexual orientation, ethnicity, religious and political views, personality, intelligence, substance use, age and gender — for 58,000+ volunteers. The work sparked an intense public and expert debate on online personalisation and privacy."
     }
