@@ -395,7 +395,7 @@
       title: "SiGMa: Simple Greedy Matching for Aligning Large Knowledge Bases",
       venue: "KDD", year: 2013,
       cite: "Lacoste-Julien, Palla, Davies, Kasneci, Graepel, Ghahramani · KDD 2013",
-      cover: "vc:knowledge",
+      cover: "img:images/paper_illustrations/sigma-aligning-knowledge.png",
       url: "https://arxiv.org/abs/1207.4525",
       abstract: "How do two machines agree on what they know? SiGMa aligns large knowledge bases — millions of entities and facts — by iteratively propagating matches through the relational graph and combining structure with property similarity. Reasoning over knowledge representations at scale, joint work with Zoubin Ghahramani."
     }
